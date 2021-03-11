@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/estilo.css"/>
     <link rel="stylesheet" href="css/animation.css"/>
     <link rel="stylesheet" href="css/sidebar.css"/>
+    <link rel="stylesheet" href="css/map.css"/>
     <link rel="stylesheet" href="css/page-create-orphanage.css"/>
     <link rel="icon" href="img/logo-icon.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,16 +35,23 @@
             <form action="">
                 <fieldset>
                     <legend>Dados</legend>
-                    <hr>
                     <div class="map-container">
                         <div id="mapid"></div>
                         <footer>
-                            <a href="">Clique no mapa para adicionar a localização</a>
+                            <a href="" id="select-point">Clique no mapa para adicionar a localização</a>
                         </footer>
                     </div>
                     <div class="input-block">
                         <label for="name">Nome</label>
                         <input id="name" type="text">
+                    </div>
+                    <div class="input-block">
+                        <label for="sobre">Sobre</label>
+                        <textarea id="sobre" type="text"></textarea>
+                    </div>
+                    <div class="input-block">
+                        <label for="Whatzap">Número de whatzap</label>
+                        <input id="Whatzap" type="text">
                     </div>
                 </fieldset>
                 <fieldset>
