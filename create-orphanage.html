@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/animation.css"/>
     <link rel="stylesheet" href="css/sidebar.css"/>
     <link rel="stylesheet" href="css/map.css"/>
+    <link rel="stylesheet" href="css/forms.css"/>
     <link rel="stylesheet" href="css/page-create-orphanage.css"/>
     <link rel="icon" href="img/logo-icon.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,16 +47,42 @@
                         <input id="name" type="text">
                     </div>
                     <div class="input-block">
-                        <label for="sobre">Sobre</label>
+                        <label for="sobre">Sobre <span>Máximo 300 caracteres</span></label>
                         <textarea id="sobre" type="text"></textarea>
                     </div>
                     <div class="input-block">
                         <label for="Whatzap">Número de whatzap</label>
                         <input id="Whatzap" type="text">
                     </div>
+                    <div class="input-block images">
+                        <label for="fotos">Fotos</label>
+                        <div class="images-upload">
+                            <input id="fotos" type="text" placeholder="Cole o link da foto aqui">
+                        </div>
+                        <button>
+                            +
+                        </button>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Visitação</legend>
+                    <div class="input-block">
+                        <label for="instrucao">Instruções</label>
+                        <textarea id="instrucao" type="text"></textarea>
+                    </div>
+                    <div class="input-block">
+                        <label for="abertura_hora">Horário das visitas</label>
+                        <input id="abertura_hora" type="text">
+                    </div>
+                    <div class="input-block">
+                        <label for="abertura_na_semana">Atende fim de semana?</label>
+                        <input id="abertura_na_semana" type="hidden" value="1">
+                        <div class="button-select">
+                            <button>Sim</button>
+                            <button>Não</button>
+                        </div>
+                        <button class="primary-button">Confirmar</button>
+                    </div>
                 </fieldset>
             </form>
         </main>
